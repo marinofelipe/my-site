@@ -4,9 +4,9 @@ title:  "iOS Dynamic Type with custom fonts"
 date:   2019-04-08 21:38:52 +0200
 categories: Acessibility UI
 ---
-iOS offers a bunch of built-in `Accessibility features`, such as Voice Over, Switch Control, and `Dynamic Type`. The last one allows users to define preferred content size, therefore it can provide a much more consistent reading experience for everyone.
+iOS offers a bunch of built-in **Accessibility features**, such as Voice Over, Switch Control, and **Dynamic Type**. The last one allows users to define preferred content size, therefore it can provide a much more consistent reading experience for everyone.
 
-As we are going to see in this post it's simple to use its API, but it gets `repetitive` when programmatically configuring views. Let's see how we can make it more `readable` and `easier to maintain` when using it with `custom fonts`.
+As we are going to see in this post it's simple to use its API, but it gets **repetitive** when programmatically configuring views. Let's see how we can make it more **readable** and **easier to maintain** when using it with **custom fonts**.
 
 > "...iOS provides an extraordinary opportunity to deliver a superior mobile experience to every customer, including those with special needs."
 > -- from Apple's Accessibility on iOS
@@ -26,10 +26,10 @@ Pretty simple, isn't it? Ok, so right now the label has a system font and only a
 
 <script src="https://gist.github.com/marinofelipe/850ae31e671bd9442d4f216b4e6c3b51.js"></script>
 
-Since `iOS 10` with the addition of `UIContentSizeCategoryAdjusting` protocol that became easier. All base UIKit classes that have text `UILabel`, `UITextField`, and `UITextView` conforms to it. In this case, having `adjustsFontForContentSizeCategory` set to **true** takes the job of resizing.
+Since **iOS 10** with the addition of **UIContentSizeCategoryAdjusting** protocol that became easier. All base UIKit classes that have text **UILabel**, **UITextField**, and **UITextView** conforms to it. In this case, having **adjustsFontForContentSizeCategory** set to **true** takes the job of resizing.
 
 ### Under iOS 10
-When working with important products every user counts. In this case to listen to content category changes of those who still uses `iOS 9.*`, generally around [3%](http://gs.statcounter.com/ios-version-market-share/mobile-tablet/worldwide), `UIContentSizeCategory.didChangeNotification` enters the game.
+When working with important products every user counts. In this case to listen to content category changes of those who still uses **iOS 9.***, generally around [3%](http://gs.statcounter.com/ios-version-market-share/mobile-tablet/worldwide), **UIContentSizeCategory.didChangeNotification** enters the game.
 
 <script src="https://gist.github.com/marinofelipe/8eef4cb83f8d3eda08843f0232d26595.js"></script>
 
@@ -40,13 +40,13 @@ To use it we initialise a UIFontMetrics object injecting a text style, then we t
 
 <script src="https://gist.github.com/marinofelipe/824d12a71f6f573e87197659ef616097.js"></script>
 
-The above code works 👍, but doing it for all our fonts is quite repetitive and it can get a bit messy. Imagine how much pain would it be to also set the views to adapt to content size, configure the fonts, and all other configuring boilerplate. So, considering that you already know how to bundle custom fonts, let's see how we can make use of some nice `Swift` features to use them along with Dynamic Type for all views on easy.
+The above code works 👍, but doing it for all our fonts is quite repetitive and it can get a bit messy. Imagine how much pain would it be to also set the views to adapt to content size, configure the fonts, and all other configuring boilerplate. So, considering that you already know how to bundle custom fonts, let's see how we can make use of some nice **Swift** features to use them along with Dynamic Type for all views on easy.
 
 So let's say our app shows famous movies and they have their own displayable fonts. First, we can define an enum for each of them.
 
 <script src="https://gist.github.com/marinofelipe/8df29a0aedb3974d986c02899b5c624d.js"></script>
 
-Then we create a `CustomFont` protocol with conditional conformance where `Self` is `RawRepresentable` and Self's `RawValue<` has the type `String`, so we are able to get a constructed custom font with the name represented by its `rawValue` and the given size.
+Then we create a **CustomFont** protocol with conditional conformance where **Self** is **RawRepresentable** and Self's **RawValue** has the type **String**, so we are able to get a constructed custom font with the name represented by its **rawValue** and the given size.
 
 <script src="https://gist.github.com/marinofelipe/18d2b515e07ad5cc349b9e9ea8aa2b6f.js"></script>
 
@@ -61,7 +61,7 @@ Custom fonts can be set as below.
 <br>
 ## Scalable fonts
 
-Now let's see how we can make our custom fonts to scale.  Here we create a `ScalableFont` protocol where we define what we expect from scalable font objects. After that we extend UIFont to allow us to scale any font that we work with.
+Now let's see how we can make our custom fonts to scale.  Here we create a **ScalableFont** protocol where we define what we expect from scalable font objects. After that we extend UIFont to allow us to scale any font that we work with.
 
 <script src="https://gist.github.com/marinofelipe/566cf6d7b379a02a1463561e935862bf.js"></script>
 
