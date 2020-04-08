@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "plainwhite"
 gem "github-pages", group: :jekyll_plugins
+gem "rouge"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"

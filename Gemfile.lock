@@ -248,6 +248,7 @@ DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.12)
   plainwhite
+  rouge
 
 BUNDLED WITH
    2.1.4
