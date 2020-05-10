@@ -12,9 +12,9 @@ tags:
   - closures
 ---
 
-When dealing with closures the importance of capturing <b>self</b> defining it as <b>[weak]</b> or <b>[unowned</b> is quite known in the Swift community, mainly, to avoid retain cycles. 
+When dealing with closures the importance of capturing `self` defining it as `[weak]` or `[unowned]` is quite known in the Swift community, mainly, to avoid retain cycles. 
 
-**Swift also allows capturing properties** from the context:
+`Swift also allows capturing properties` from the context:
 ```swift
 let blogger = Blogger()
 
@@ -23,8 +23,8 @@ let blogging = { [blogger] in
 }
 ```
 
-This is really nice! And it can often be a better/easier approach over capturing self.
-But let's not forget that a captured property can be of value or reference types, and there are key differences that we must be aware of.
+This is really cool! And it can often be a better/easier approach over capturing self.
+As any other property around Swift code though, a captured property can be of value or reference types. There are key differences that we must be aware of.
 
 ## Capturing reference types
 
@@ -44,7 +44,7 @@ final class Blogger {
     private var blogPost = BlogPost()
 
     func writeBlogPost() {
-    	// For the sake of this example the write task is async,
+    	// For the sake of the example the openPost task is async,
     	// and therefore executed after blogPost.text is set
         blog.openPost { [blogPost] in
             debugPrint("\(blogPost.text)") // "text"
@@ -74,7 +74,7 @@ final class Blogger {
     private var blogPost = BlogPost()
 
     func writeBlogPost() {
-    	// For the sake of this example the write task is async,
+    	// For the sake of this example the openPost task is async,
     	// and therefore executed after blogPost.text is set
         blog.openPost { [blogPost] in
             debugPrint("\(blogPost.text)") // ""
@@ -99,6 +99,6 @@ func writeBlogPost() {
 ```
 
 <br>
-**That's it for Today!** 
+#### `That's it for Today!`
 
 Using capture lists to capture properties instead of self can be really cool, but it is important to consider the nature of the captured properties to correctly choose between what to capture ;).
