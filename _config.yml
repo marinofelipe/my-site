@@ -4,7 +4,7 @@ minimal_mistakes_skin: "default"
 
 # Site Settings
 locale: "en-US"
-title: "Grab a coffee..☕️"
+title: "Grab a ☕️ ..."
 title_separator: "-"
 name: "Felipe Marino"
 description: >-
@@ -12,6 +12,7 @@ description: >-
 url: "https://marinofelipe.github.io"
 atom_feed:
   path: "feed.xml"
+repository: marinofelipe/marinofelipe.github.io
 
 # Site Author
 author:
@@ -80,6 +81,7 @@ plugins:
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-gist
   - jekyll-feed
   - jemoji
@@ -119,4 +121,11 @@ defaults:
       layout: single
       classes: wide
       header:
-        image: /assets/banners/tv_tower.png  
+        image: /assets/banners/tv_tower.png
+
+# Analytics
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-165961290-1"
+    anonymize_ip: true
