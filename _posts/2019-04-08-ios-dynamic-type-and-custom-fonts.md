@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "iOS Dynamic Type with custom fonts"
+layout: single
+title:  iOS Dynamic Type with custom fonts
 date:   2019-04-08 21:38:52 +0200
-categories: Acessibility UI
+category: Accessibility
 ---
 iOS offers a bunch of built-in **Accessibility features**, such as Voice Over, Switch Control, and **Dynamic Type**. The last one allows users to define preferred content size, therefore it can provide a much more consistent reading experience for everyone.
 
