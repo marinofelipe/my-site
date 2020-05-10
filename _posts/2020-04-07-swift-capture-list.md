@@ -2,7 +2,14 @@
 layout: single
 title:  'Swift capture lists: Reference vs Value properties'
 date:   2020-04-08 14:00:00 +0100
-category: Tips
+categories:
+  - Tips
+  - Swift
+tags:
+  - capture lists
+  - reference type
+  - value type
+  - closures
 ---
 
 When dealing with closures the importance of capturing <b>self</b> defining it as <b>[weak]</b> or <b>[unowned</b> is quite known in the Swift community, mainly, to avoid retain cycles. 
