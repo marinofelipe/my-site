@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  Coffee Xcode shortcuts 
+title: Xcode coffee shortcuts 
 <!-- date:   2020-05-10 22:00:00 +0200 -->
 categories:
   - Xcode
@@ -20,6 +20,7 @@ In this post, I'll share some basic `built-in Xcode shortcuts` that can speed up
 
 Well, Xcode is not the most loved tool around, that's for sure! There are many things we wish were better, I'll just drop here "lack of incremental updates".. yes, pretty sad! On the other hand, knowing its corners and a few tricks can make a `huge difference` on how `satisfying` is working with it.
 
+Make sure you have Xcode open...
 
 ## Drink and try it out
 
@@ -31,7 +32,7 @@ Well, Xcode is not the most loved tool around, that's for sure! There are many t
 | Show/hide Navigator | ⌘0 | Fold/unfold the left panel (Navigator) |
 | Show/hide debug area | ⌘⇧Y | Fold/unfold the debug area in the bottom of Xcode |
 | Navigate recent files | ⌘⌃←[→] | Navigate back and forward the recent files |
-| Jump to counterpart | ⌘^↑[↓] | Switch between a file and its corresponding files. Honestly, it rarely works well, but [Daniel Martin](https://twitter.com/dmartincy) has [found a way](https://gist.github.com/danielmartin/8411c303e5c8702c19c65950b49635b8) of making it very powerful for MVVM projects |
+| Jump to counterpart | ⌘^↑[↓] | Switch between a file and its corresponding files. Honestly, it rarely works well, but [Daniel Martin](https://twitter.com/dmartincy) has [found a way](https://gist.github.com/danielmartin/8411c303e5c8702c19c65950b49635b8) of making it very nicier for MVVM projects |
 | Show selected file on project navigator | ⌘⇧J | Open the left panel (Navigator) with the current file selected |
 | Open Quickly | ⌘⇧o | Global quick search component that can filter anything, file name, functions, properties.. |
 | Open Quickly - Another editor | ⌥↵ | The file gets opened in an additional editor |
@@ -44,12 +45,13 @@ Well, Xcode is not the most loved tool around, that's for sure! There are many t
 
 ## What else?
 
-I believe that `learning` combined with [`practicing`](https://en.wikipedia.org/wiki/Practice_(learning_method)) are key ingredients towards `growth` and `goals`.
+I believe that `learning` combined with [`practicing`](https://en.wikipedia.org/wiki/Practice_(learning_method)) are key ingredients towards `growth` and to `achieve goals`.
+<br>
 Coffee is kind of the same, right? Griding some fancy grains, putting up the exact temperature, the correct weight, using the best techniques and experience will make a high-quality app... oh, I mean, coffee!
 
-Achieving a great workflow and being `highly productive` is something in which shortcuts along with more advanced techniques can help on.
+Being `more productive` and improving your `Xcode workflow` are tasks in which shortcuts along with more advanced techniques can help on.
 
-The `shortcuts` presented here are straightforward and ready to use `without any further Xcode customization`, so moving forward, when it starts to get automatic, I encourage you to explore `Xcode's key bindings`, [`behaviors`](https://www.avanderlee.com/xcode/xcode-behaviours-optimized/) and [advanced debugging](https://developer.apple.com/videos/play/wwdc2018/412/).
+The `shortcuts` listed here are straightforward and ready to use `without any further Xcode customization`, so moving forward, when it starts to get automatic, I encourage you to explore custom Xcode's `key bindings`, [`behaviors`](https://www.avanderlee.com/xcode/xcode-behaviours-optimized/) and why not [`advanced debugging`](https://developer.apple.com/videos/play/wwdc2018/412/).
 
 Ping me on Twitter, reach out, comment with the shortcuts you use each and every-day.. let's share! By the way, if you have coffee and don't mind sharing...
 
