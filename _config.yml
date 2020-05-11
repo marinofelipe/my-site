@@ -8,7 +8,7 @@ title: "Grab a ☕️ ..."
 title_separator: "-"
 name: "Felipe Marino"
 description: >-
-  A blog about Swift development, learnings, server side, iOS, tips and tricks..
+  A blog about Swift development, learnings, iOS, server side, tips and tricks..
 url: "https://marinofelipe.github.io"
 atom_feed:
   path: "feed.xml"
@@ -18,7 +18,7 @@ repository: marinofelipe/marinofelipe.github.io
 author:
   name: "Felipe Marino"
   avatar: "/assets/avatars/me.png"
-  bio: "iOS Engineer, Swift Developer. This is where I write findings and learnings about Xcode, Swift and more.."
+  bio: "iOS Engineer, Swift Developer. Here I write findings and learnings about Swift, Xcode and more.."
   location: "Germany, Berlin"
   github: marinofelipe
   twitter: _marinofelipe
