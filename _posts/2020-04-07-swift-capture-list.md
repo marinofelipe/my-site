@@ -12,7 +12,7 @@ tags:
   - closures
 ---
 
-When dealing with closures the importance of capturing `self` defining it as `[weak]` or `[unowned]` is quite known in the Swift community, mainly, to avoid retain cycles. 
+When dealing with closures the importance of capturing `self` defining it as `[weak]` or `[unowned]` is well known, mainly, to avoid retain cycles. 
 
 `Swift also allows capturing properties` from the context:
 ```swift
