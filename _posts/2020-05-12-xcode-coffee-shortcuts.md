@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Xcode coffee shortcuts 
-<!-- date:   2020-05-10 22:00:00 +0200 -->
+date:  2020-05-12 11:30:00 +0100
 categories:
   - Xcode
   - Tips
