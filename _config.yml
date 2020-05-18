@@ -129,3 +129,6 @@ analytics:
   google:
     tracking_id: "UA-165961290-1"
     anonymize_ip: true
+
+# Google domain verification
+google_site_verification: "8cvHYpf-OL6z0iI6q8Ad_I9duRPYiCacNFNlQ1di0i4"
