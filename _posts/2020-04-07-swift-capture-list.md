@@ -3,7 +3,6 @@ layout: single
 title:  'Swift capture lists: Reference vs Value properties'
 date:   2020-04-08 14:00:00 +0100
 categories:
-  - Tips
   - Swift
 tags:
   - capture lists

@@ -4,7 +4,6 @@ title: Xcode coffee shortcuts
 date:  2020-05-12 11:30:00 +0100
 categories:
   - Xcode
-  - Tips
 tags:
   - shortcuts
   - workflow
