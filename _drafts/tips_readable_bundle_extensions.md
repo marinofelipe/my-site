@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  'Swift tips: Readable Bundle extensions'
+title: 'Swift tips: Well-defined Bundles'
 <!-- date:   2020-04-08 14:00:00 +0100 -->
 categories:
   - Tips
@@ -14,7 +14,7 @@ tags:
 When working on Apple's ecosystem we often need to interact with bundled resources. `Storyboard`s (😫), `XIB/NIB`s, `UIImage`s, `LocalizedString`s, `JSON` files (used for testing fixtures for example), and so on.
 <br>
 
-Nowadays apps tend to be quite `modular` which means working with `maaany bundles`. Let's see how we can mimic Apple's `Bundle.main` pattern to have a `reusable, comprehensible and elegant API`, by creating `Swift.Bundle extensions` for each module.
+Nowadays apps tend to be quite `modular` which means working with `maaany bundles`. Let's see how we can mimic Apple's `Bundle.main` static property by creating `Swift.Bundle extensions` for each module, which helps on achieving a `standarized, reusable and comprehensible` API.
 
 ```swift
 // Let's say we have a Profile module in our app...
@@ -42,3 +42,6 @@ Don't forget that the same applies for `test targets or test frameworks`.
 ```swift
 let jsonFixture = JSONLoader.load(fileNamed: "success", bundle: .profileTests)
 ```
+
+### References: 
+* Apple Developer: [class Foundation.Bundle](https://developer.apple.com/documentation/foundation/bundle)
