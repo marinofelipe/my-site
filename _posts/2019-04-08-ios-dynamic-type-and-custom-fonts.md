@@ -12,12 +12,10 @@ tags:
 ---
 iOS offers a bunch of built-in **Accessibility features**, such as Voice Over, Switch Control, and **Dynamic Type**. The last one allows users to define preferred content size, therefore it can provide a much more consistent reading experience for everyone.
 
-As we are going to see in this post it's simple to use its API, but it gets **repetitive** when programmatically configuring views. Let's see how we can make it more **readable** and **easier to maintain** when using it with **custom fonts**.
-
 > "...iOS provides an extraordinary opportunity to deliver a superior mobile experience to every customer, including those with special needs."
 > -- from Apple's Accessibility on iOS
 
-As we are going to see in this post it's simple to use its API, but it gets repetitive when programmatically configuring views and we can make it more readable and easy to work with custom fonts.
+As we are going to see in this post it's simple to use its API, but it gets **repetitive** when programmatically configuring views. Let's see how we can make it more **readable** and **easier to maintain** when using it with **custom fonts**.
 
 <br>
 ## Text styles

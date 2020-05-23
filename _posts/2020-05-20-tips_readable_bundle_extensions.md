@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Well-defined Bundles
+title: 'Swift tip: Well-defined Bundles'
 date: 2020-05-20 11:00:00 +0100
 categories:
   - Tips
