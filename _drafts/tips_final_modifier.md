@@ -18,7 +18,7 @@ The `final` *keyword* has both compile and runtime effects in a Swift (or mixed)
 [Inheritance](https://docs.swift.org/swift-book/LanguageGuide/Inheritance.html) is a common pattern to achieve [Polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)). It has its use cases, Apple itself makes good use of it in the SDKs it provides us (*Foundation* and *UIKit* among others), which doesn't mean using it all around is a good idea.
 
 That's where `final` comes in handy. 
-As an example, a UIViewController declared final cannot be subclassed, it gets protected by the compiler, if anyone tries to do so, there will be a compile-time error.
+As an example, an UIViewController declared final cannot be subclassed, it gets protected by the compiler, if anyone tries to do so, there will be a compile-time error.
 
 The `intent and design choice` gets clear.
 
@@ -33,11 +33,13 @@ Why UIViewController as an example 👀? Because I've seen base view controllers
 
 ```swift
 class Vehicle {
+   // This property can't be overriden
    final var speed: Int = 0
 
+   // In other hand this method can, which could be changed by marking it as final
    func accelerate() {
       speed += 10
-   } 
+   }
 }
 ```
 
@@ -54,7 +56,7 @@ It will optimize the compiler to directly call the functionality, reducing [`dyn
 I recommend you to check Apple Developer's [`Increasing Performance by Reducing Dynamic Dispatch`](https://developer.apple.com/swift/blog/?id=27) in case you're curious about other ways to reduce dynamic dispatch and improve your code performance.
 
 #### `See you next time`
-Thanks for reading 😄. <br>
+Thanks for reading. I hope you have learned something 😄.<br>
 I'm working on a series of longer posts about how to create your own *HTTP networking*, with a lightweight but easy to deal and well-tested API. It might come out soon, stay tuned!
 
 ### References: 
