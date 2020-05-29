@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Swift tip: final keyword'
-<!-- date: 2020-05-28 11:00:00 +0100 -->
+date: 2020-05-29 10:15:00 +0100
 categories:
   - Tips
   - Swift
